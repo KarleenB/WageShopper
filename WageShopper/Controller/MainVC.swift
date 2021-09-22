@@ -11,7 +11,9 @@ class MainVC: UIViewController {
 
     @IBOutlet weak var wageTxt: CurrencyTextField!
     @IBOutlet weak var priceTxt: CurrencyTextField!
-    
+    @IBOutlet weak var numberLbl: UILabel!
+    @IBOutlet weak var hourLbl: UILabel!
+   
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -21,6 +23,8 @@ class MainVC: UIViewController {
         calcBtn.setTitleColor(UIColor.white, for: .normal)
         calcBtn.addTarget(self, action: #selector(MainVC.calculate), for: .touchUpInside)
         
+        numberLbl.isHidden = true
+        hourLbl.isHidden = true
         
         //Add calcbutton to top of keyboard when it appears on screen from clicking in textField
         wageTxt.inputAccessoryView = calcBtn
@@ -28,8 +32,22 @@ class MainVC: UIViewController {
     }
     
     @objc func calculate() {
-        
+        if let wageInput = wageTxt.text, let priceInput = priceTxt.text {
+            if let wage = Double(wageInput), let price = Double(priceInput) {
+                view.endEditing(true)
+                numberLbl.isHidden = false
+                hourLbl.isHidden = false
+                numberLbl.text = "\(Wage.getHours(forWage: wage, andPrice: price))"
+            }
+        }
     }
-
+    
+    @IBAction func clearCalcBtn(_ sender: Any) {
+        numberLbl.isHidden = true
+        hourLbl.isHidden = true
+        wageTxt.text = ""
+        priceTxt.text = ""
+    }
+    
 }
 
