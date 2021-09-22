@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C00E2D9526FAA21400826EF1 /* WageShopperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00E2D9426FAA21400826EF1 /* WageShopperTests.swift */; };
+		C00E2D9D26FAA26800826EF1 /* Wage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00E2D9C26FAA26800826EF1 /* Wage.swift */; };
+		C00E2D9E26FAA52600826EF1 /* Wage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00E2D9C26FAA26800826EF1 /* Wage.swift */; };
 		C0B9E61226FA72AA00DBA3B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B9E61126FA72AA00DBA3B9 /* AppDelegate.swift */; };
 		C0B9E61426FA72AA00DBA3B9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B9E61326FA72AA00DBA3B9 /* SceneDelegate.swift */; };
 		C0B9E61626FA72AA00DBA3B9 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B9E61526FA72AA00DBA3B9 /* MainVC.swift */; };
@@ -16,7 +19,20 @@
 		C0B9E62826FA796500DBA3B9 /* CurrencyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B9E62726FA796500DBA3B9 /* CurrencyTextField.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		C00E2D9626FAA21400826EF1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0B9E60626FA72AA00DBA3B9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C0B9E60D26FA72AA00DBA3B9;
+			remoteInfo = WageShopper;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		C00E2D9226FAA21400826EF1 /* WageShopperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WageShopperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C00E2D9426FAA21400826EF1 /* WageShopperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WageShopperTests.swift; sourceTree = "<group>"; };
+		C00E2D9C26FAA26800826EF1 /* Wage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wage.swift; sourceTree = "<group>"; };
 		C0B9E60E26FA72AA00DBA3B9 /* WageShopper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WageShopper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0B9E61126FA72AA00DBA3B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C0B9E61326FA72AA00DBA3B9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -29,6 +45,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		C00E2D8F26FAA21400826EF1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C0B9E60B26FA72AA00DBA3B9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -39,10 +62,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C00E2D9326FAA21400826EF1 /* WageShopperTests */ = {
+			isa = PBXGroup;
+			children = (
+				C00E2D9426FAA21400826EF1 /* WageShopperTests.swift */,
+			);
+			path = WageShopperTests;
+			sourceTree = "<group>";
+		};
+		C00E2D9B26FAA24100826EF1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C00E2D9C26FAA26800826EF1 /* Wage.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		C0B9E60526FA72AA00DBA3B9 = {
 			isa = PBXGroup;
 			children = (
 				C0B9E61026FA72AA00DBA3B9 /* WageShopper */,
+				C00E2D9326FAA21400826EF1 /* WageShopperTests */,
 				C0B9E60F26FA72AA00DBA3B9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				C0B9E60E26FA72AA00DBA3B9 /* WageShopper.app */,
+				C00E2D9226FAA21400826EF1 /* WageShopperTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,6 +101,7 @@
 			children = (
 				C0B9E61126FA72AA00DBA3B9 /* AppDelegate.swift */,
 				C0B9E61326FA72AA00DBA3B9 /* SceneDelegate.swift */,
+				C00E2D9B26FAA24100826EF1 /* Models */,
 				C0B9E62626FA791E00DBA3B9 /* Views */,
 				C0B9E62526FA774500DBA3B9 /* Controller */,
 				C0B9E61726FA72AA00DBA3B9 /* Main.storyboard */,
@@ -89,6 +131,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		C00E2D9126FAA21400826EF1 /* WageShopperTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C00E2D9A26FAA21400826EF1 /* Build configuration list for PBXNativeTarget "WageShopperTests" */;
+			buildPhases = (
+				C00E2D8E26FAA21400826EF1 /* Sources */,
+				C00E2D8F26FAA21400826EF1 /* Frameworks */,
+				C00E2D9026FAA21400826EF1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C00E2D9726FAA21400826EF1 /* PBXTargetDependency */,
+			);
+			name = WageShopperTests;
+			productName = WageShopperTests;
+			productReference = C00E2D9226FAA21400826EF1 /* WageShopperTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		C0B9E60D26FA72AA00DBA3B9 /* WageShopper */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C0B9E62226FA72AE00DBA3B9 /* Build configuration list for PBXNativeTarget "WageShopper" */;
@@ -112,9 +172,13 @@
 		C0B9E60626FA72AA00DBA3B9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1250;
+				LastSwiftUpdateCheck = 1300;
 				LastUpgradeCheck = 1250;
 				TargetAttributes = {
+					C00E2D9126FAA21400826EF1 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = C0B9E60D26FA72AA00DBA3B9;
+					};
 					C0B9E60D26FA72AA00DBA3B9 = {
 						CreatedOnToolsVersion = 12.5.1;
 					};
@@ -134,11 +198,19 @@
 			projectRoot = "";
 			targets = (
 				C0B9E60D26FA72AA00DBA3B9 /* WageShopper */,
+				C00E2D9126FAA21400826EF1 /* WageShopperTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		C00E2D9026FAA21400826EF1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C0B9E60C26FA72AA00DBA3B9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -152,18 +224,36 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		C00E2D8E26FAA21400826EF1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C00E2D9526FAA21400826EF1 /* WageShopperTests.swift in Sources */,
+				C00E2D9E26FAA52600826EF1 /* Wage.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C0B9E60A26FA72AA00DBA3B9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				C0B9E61626FA72AA00DBA3B9 /* MainVC.swift in Sources */,
 				C0B9E61226FA72AA00DBA3B9 /* AppDelegate.swift in Sources */,
+				C00E2D9D26FAA26800826EF1 /* Wage.swift in Sources */,
 				C0B9E62826FA796500DBA3B9 /* CurrencyTextField.swift in Sources */,
 				C0B9E61426FA72AA00DBA3B9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C00E2D9726FAA21400826EF1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C0B9E60D26FA72AA00DBA3B9 /* WageShopper */;
+			targetProxy = C00E2D9626FAA21400826EF1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		C0B9E61726FA72AA00DBA3B9 /* Main.storyboard */ = {
@@ -185,6 +275,54 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		C00E2D9826FAA21400826EF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.brandenk.WageShopperTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WageShopper.app/WageShopper";
+			};
+			name = Debug;
+		};
+		C00E2D9926FAA21400826EF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.brandenk.WageShopperTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WageShopper.app/WageShopper";
+			};
+			name = Release;
+		};
 		C0B9E62026FA72AE00DBA3B9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -340,6 +478,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		C00E2D9A26FAA21400826EF1 /* Build configuration list for PBXNativeTarget "WageShopperTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C00E2D9826FAA21400826EF1 /* Debug */,
+				C00E2D9926FAA21400826EF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		C0B9E60926FA72AA00DBA3B9 /* Build configuration list for PBXProject "WageShopper" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
